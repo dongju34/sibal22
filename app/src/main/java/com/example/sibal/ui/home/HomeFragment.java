@@ -51,10 +51,10 @@ public class HomeFragment extends Fragment {
         incomeListView = root.findViewById(R.id.listIncome);
         incomeListView.setAdapter(incomeAdapter);
 
-        // 지출 데이터 어댑터 설정
-        expenseAdapter = new MyAdapter(requireContext(), expenseData);
-        expenseListView = root.findViewById(R.id.listExpense);
-        expenseListView.setAdapter(expenseAdapter);
+//        // 지출 데이터 어댑터 설정
+//        expenseAdapter = new MyAdapter(requireContext(), expenseData);
+//        expenseListView = root.findViewById(R.id.listExpense);
+//        expenseListView.setAdapter(expenseAdapter);
 
         // 예제: ViewModel에서 가져온 데이터를 사용하는 방법
         homeViewModel.getText().observe(getViewLifecycleOwner(), text -> {

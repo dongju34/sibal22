@@ -46,20 +46,20 @@ public class DashboardFragment extends Fragment {
             }
         });
 
-        card = root.findViewById(R.id.asset);
-        classification = root.findViewById(R.id.classification);
-        amount = root.findViewById(R.id.amount);
-
+//        card = root.findViewById(R.id.asset);
+//        classification = root.findViewById(R.id.classification);
+//        amount = root.findViewById(R.id.amount);
+//
         Intent intent = getActivity().getIntent();
-        String cardstr = intent.getStringExtra("card");
-        String classificationstr = intent.getStringExtra("classification");
-        String amountstr = intent.getStringExtra("str");
-
+//        String cardstr = intent.getStringExtra("card");
+//        String classificationstr = intent.getStringExtra("classification");
+//        String amountstr = intent.getStringExtra("str");
+//
         String selectedDateFromInput = intent.getStringExtra("selectedDateFromInput");
-
-        card.setText(cardstr);
-        classification.setText(classificationstr);
-        amount.setText(amountstr);
+//
+//        card.setText(cardstr);
+//        classification.setText(classificationstr);
+//        amount.setText(amountstr);
 
         textDay = root.findViewById(R.id.text_day);
 

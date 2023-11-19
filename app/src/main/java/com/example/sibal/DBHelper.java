@@ -60,20 +60,20 @@ public class DBHelper extends SQLiteOpenHelper {
         // 수입 테이블 생성 쿼리
         String createIncomeTableQuery = "CREATE TABLE " + TABLE_INCOME + " (" +
                 COL_ID_INCOME + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                COL_DATE_INCOME + " STRING, " +
-                COL_CARD_INCOME + " STRING, " +
-                COL_CLASS_INCOME + " STRING, " +
-                COL_AMOUNT_INCOME + " INTEGER); ";
+                COL_DATE_INCOME + " TEXT, " +
+                COL_CARD_INCOME + " TEXT, " +
+                COL_CLASS_INCOME + " TEXT, " +
+                COL_AMOUNT_INCOME + " TEXT); ";
 
         db.execSQL(createIncomeTableQuery);
 
         // 지출 테이블 생성 쿼리
         String createExpenseTableQuery = "CREATE TABLE " + TABLE_EXPENSE + " (" +
                 COL_ID_EXPENSE + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                COL_DATE_EXPENSE + " STRING, " +
-                COL_CARD_EXPENSE + " STRING, " +
-                COL_CLASS_EXPENSE + " STRING, " +
-                COL_AMOUNT_EXPENSE + " INTEGER); ";
+                COL_DATE_EXPENSE + " TEXT, " +
+                COL_CARD_EXPENSE + " TEXT, " +
+                COL_CLASS_EXPENSE + " TEXT, " +
+                COL_AMOUNT_EXPENSE + " TEXT); ";
 
         db.execSQL(createExpenseTableQuery);
     }
